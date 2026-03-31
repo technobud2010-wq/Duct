@@ -40,7 +40,7 @@
         header {
             background: linear-gradient(135deg, var(--primary-color) 0%, #1E293B 100%);
             color: var(--white);
-            padding: 80px 0;
+            padding: 60px 0 80px;
             text-align: center;
             border-bottom: 5px solid var(--accent-color);
         }
@@ -171,12 +171,13 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: 600;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
             text-align: center;
         }
 
         .btn:hover {
             background-color: #2563EB;
+            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -188,6 +189,16 @@
         .btn-outline:hover {
             background-color: var(--secondary-color);
             color: var(--white);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: #1E293B;
+        }
+
+        .btn-accent:hover {
+            background-color: #D97706;
+            color: #FFFFFF;
         }
 
         .pdf-grid {
@@ -225,8 +236,14 @@
 
     <header>
         <div class="container">
+            <img src="777.webp" alt="Логотип компанії" style="width: 100%; max-width: 320px; aspect-ratio: 1046 / 211; object-fit: contain; margin-bottom: 25px;">
+            
             <h1>Пропозиція співпраці у сфері очистки повітропроводів</h1>
             <p class="subtitle">Розроблено спеціально для ресторану <strong>«Кораблик»</strong> та мережі <strong>«Take Five Hospitality Group»</strong></p>
+            
+            <div style="margin-top: 30px;">
+                <a href="https://pokvitryaky.com.ua" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="padding: 14px 30px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Відвідайте наш сайт</a>
+            </div>
         </div>
     </header>
 
@@ -368,6 +385,11 @@
                 <a href="22.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">КП №2</a>
                 <a href="33.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">КП №3</a>
                 <a href="44.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">КП №4</a>
+            </div>
+            
+            <div style="margin-top: 45px; padding-top: 35px; border-top: 1px solid #E2E8F0;">
+                <h3 style="margin-bottom: 20px; color: var(--primary-color);">Бажаєте дізнатися більше або залишити заявку?</h3>
+                <a href="https://pokvitryaky.com.ua" target="_blank" rel="noopener noreferrer" class="btn" style="padding: 16px 36px; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Відвідайте наш сайт</a>
             </div>
         </section>
         
